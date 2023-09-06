@@ -232,7 +232,7 @@
 }
 .gw-outer-container .gw-container__image-container .campaign-terms a.as_cta {
   text-transform: capitalize;
-  font-family: "UntitledSans-Regular";
+  font-family: "Arial";
 }
 .gw-outer-container .gw-container__link-container {
   width: 100%;
@@ -487,77 +487,8 @@
 }
 
 @font-face {
-  font-family: "Univers73";
-  src: url("/fonts/univers73-black-extended/univers73-black-extended.woff2")
-      format("woff2"),
-    url("/fonts/univers73-black-extended/univers73-black-extended.woff")
-      format("woff"),
-    url("/fonts/univers73-black-extended/univers73-black-extended.ttf")
-      format("truetype");
-}
-
-@font-face {
-  font-family: "UntitledSans-Medium";
-  src: url("/fonts/untitled-sans/UntitledSans-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-family: "UntitledSans-Regular";
-  src: url("/fonts/untitled-sans/UntitledSans-Regular.woff") format("woff");
-}
-
-@font-face {
-  font-family: "stone-serif";
-  src: url("/fonts/stone-serif/stone-serif.woff2") format("woff2"),
-    url("/fonts/stone-serif/stone-serif?#iefix") format("embedded-opentype"),
-    url("/fonts/stone-serif/stone-serif.woff") format("woff"),
-    url("/fonts/stone-serif/stone-serif.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "brick-text-black";
-  src: url("/fonts/brick-text-black/brick-text-black-pro.woff2") format("woff2"),
-    url("/fonts/brick-text-black/brick-text-black-pro?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/brick-text-black/brick-text-black-pro.woff") format("woff"),
-    url("/fonts/brick-text-black/brick-text-black-pro.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "itc-benguiat-bold";
-  src: url("/fonts/itc-benguiat-bold/itc-benguiat-bold.woff2") format("woff2"),
-    url("/fonts/itc-benguiat-bold/itc-benguiat-bold.woff") format("woff"),
-    url("/fonts/itc-benguiat-bold/itc-benguiat-bold.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "plakette-ts-heavy";
-  src: url("/fonts/plakette-ts-heavy/plakette-ts-heavy.woff2") format("woff2"),
-    url("/fonts/plakette-ts-heavy/plakette-ts-heavy.woff") format("woff"),
-    url("/fonts/plakette-ts-heavy/plakette-ts-heavy.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "NewhouseDTCond-Bold";
-  src: url("/fonts/newhouse-dt/newhouse-dt.eot");
-  src: url("/fonts/newhouse-dt/newhouse-dt.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/newhouse-dt/newhouse-dt.woff2") format("woff2"),
-    url("/fonts/newhouse-dt/newhouse-dt.woff") format("woff"),
-    url("/fonts/newhouse-dt/newhouse-dt.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "AkzidenzGrotesk-Medium";
-  src: url("/fonts/AkzidenzGrotesk-Medium/AkzidenzGroteskBQ-Medium.eot");
-  src: url("/fonts/AkzidenzGrotesk-Medium/AkzidenzGroteskBQ-Medium.eot?#iefix")
-      format("embedded-opentype"),
-    url("/fonts/AkzidenzGrotesk-Medium/AkzidenzGroteskBQ-Medium.woff2")
-      format("woff2"),
-    url("/fonts/AkzidenzGrotesk-Medium/AkzidenzGroteskBQ-Medium.woff")
-      format("woff"),
-    url("/fonts/AkzidenzGrotesk-Medium/AkzidenzGroteskBQ-Medium.ttf")
-      format("truetype");
+  font-family: "Arial";
+  src: url("/fonts/untitled-sans/Arial.woff") format("woff");
 }
 
 a.as_cta {
@@ -616,24 +547,6 @@ a.as_cta.cta_underline:after {
 .grow3 {
   transition: transform ease-in-out 0.9s;
   display: inline-block;
-}
-
-@media (min-width: 1081px) {
-  .grow2:hover {
-    transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: scale(1.1);
-  }
-}
-
-@media (min-width: 1081px) {
-  .grow3:hover {
-    transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: scale(1.05);
-  }
 }
 
 body {
