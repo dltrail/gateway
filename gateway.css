@@ -486,11 +486,6 @@
   }
 }
 
-@font-face {
-  font-family: "Arial";
-  src: url("/fonts/untitled-sans/Arial.woff") format("woff");
-}
-
 a.as_cta {
   text-transform: uppercase;
   font-weight: 500;
