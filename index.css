@@ -28,6 +28,19 @@ body {
   text-align: center;
   letter-spacing: 2px;
 }
+
+.showcase__filters {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  gap: 2em;
+  margin: 40px 0;
+  padding: 0;
+}
+.showcase__filters li {
+  list-style: none;
+  text-transform: uppercase;
+}
 .showcase__blockContainer {
   display: flex;
   flex-direction: column;
