@@ -16,20 +16,29 @@
       <section>
         <header class="showcase__header">Showcase</header>
       </section>
-      <section class="showcase__blockContainer">
-        <div class="showcase__blockContainer__block">
+      <section>
+        <div id="filters">
+          <span class="filter active" data-filter="all">ALL</span>
+          <span class="filter" data-filter="dev">Landing pages</span>
+          <span class="filter" data-filter="js">JS</span>
+        </div>
+      </section>
+      <section class="projects">
+        <div class="projects__project" data-filter="dev">
           <p>Gateway</p>
           <a href="./projects/gateway/index.html"> </a>
         </div>
-        <div class="showcase__blockContainer__block">
+        <div class="projects__project" data-filter="dev">
           <p>Transitional Layers</p>
           <a href="./projects/transitional/index.html"> </a>
         </div>
-        <div class="showcase__blockContainer__block">
+        <div class="projects__project" data-filter="js">
           <p>leather Layers</p>
           <a href="./projects/leather/index.html"></a>
         </div>
       </section>
     </article>
+
+    <script src="./index.js"></script>
   </body>
 </html>
