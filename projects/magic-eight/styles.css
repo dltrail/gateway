@@ -1,0 +1,136 @@
+body {
+    /* background-color: black; */
+    background: rgb(174,196,238);
+    background: radial-gradient(circle, rgba(174,196,238,1) 0%, rgba(4,8,78,1) 100%);
+    font-family: Work Sans, sans-serif;
+    letter-spacing: 0.6px;
+    background-color: #DFDBE5;
+
+}
+
+  .page-content {
+    display: flex;
+flex-direction: column;
+align-items: center;
+position: absolute;
+transform: translate(-50%, -50%);
+top: 50%;
+left: 50%;
+}
+  .over {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+transform: translate3d(0, 0, 0);
+backface-visibility: hidden;
+perspective: 1000px;
+}
+
+@keyframes shake {
+10%, 90% {
+transform: translate3d(-1px, 0, 0);
+}
+
+20%, 80% {
+transform: translate3d(4px, 0, 0);
+}
+
+30%, 50%, 70% {
+transform: translate3d(-8px, 0, 0);
+}
+
+40%, 60% {
+transform: translate3d(8px, 0, 0);
+}
+}
+
+  #ball{
+    position: relative;
+    display: inline-block;
+  }
+
+  canvas{
+    background: #000;
+    border-radius: 50%;
+
+  }
+
+  canvas.small{
+    position: absolute;
+left: 50%;
+top: 40%;
+transform: translate(-50%, -50%);
+background: #fff;
+border: solid 0.8px #1f233e;
+
+  }
+
+  h1{
+    color: rgb(60 2 56);
+    
+    font-size: 52px;
+    font-weight: 200;
+    text-align: center;
+    color: #1f233e;
+    padding-top: 40px;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  #result {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    color: #000;
+    text-align: center;
+  }
+  #result span{
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  #input-error{
+    color: #a90808;
+ 
+  }
+  #input{
+    margin-bottom: 20px;
+    height: 44px;
+width: 300px;
+background: black;
+color: wheat;
+border: none;
+padding: 8px;
+border-radius: 3.2px;
+border: solid 0.8px #1f233e;
+
+  }
+
+  #input.error{
+    border: 1px solid #a90808;
+  }
+
+  button {
+    padding: 15px;
+    font-size: 14px;
+    /* background: rgb(60 2 56); */
+    color: #000;
+    border: none;
+    background: #fff;
+    border-radius: 3.2px;
+    border: solid 0.8px #1f233e;
+    /* border: 1px solid #1c1a1a; */
+    }
+    
+    button:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: white;
+
+    }
+
+  .error{
+    border: 1px solid #a90808;
+  }

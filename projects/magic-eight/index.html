@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic 8</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" media="screen" />
+  </head>
+  <body>
+    <div class="page-content">
+      <h1>Magic</h1>
+      <div id="ball">
+        <canvas width="300" height="300"></canvas>
+        <canvas class="small" width="160" height="160"></canvas>
+        <p id="result"><span>8</span></p>
+      </div>
+      <p id="input-error"></p>
+      <input id="input" type="text" placeholder="Enter your question" />
+      <button id="button" onclick="getQuestion()">Ask the magic ball</button>
+    </div>
+    <script src="index2.js"></script>
+  </body>
+</html>

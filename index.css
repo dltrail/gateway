@@ -50,9 +50,8 @@ body {
   display: grid;
   grid-template-columns: auto;
   justify-content: center;
-  padding: 20px 0;
+  padding: 40px 0;
   align-items: center;
-  text-transform: uppercase;
   margin: 0 2em;
 }
 
@@ -62,6 +61,7 @@ body {
   margin: 10px 20px;
   border: 1px solid lightgray;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
@@ -85,10 +85,17 @@ body {
   left: 0;
 }
 
-.projects__project > p {
+.projects__project .title {
   letter-spacing: 1px;
   font-weight: bold;
   font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.projects__project .desc {
+  font-weight: normal;
+  text-transform: unset;
   text-align: center;
 }
 
@@ -103,12 +110,6 @@ body {
 @media screen and (min-width: 1024px) {
   .projects {
     grid-template-columns: auto auto auto;
-
-    justify-content: center;
-    padding: 20px 0;
-    text-align: center;
-    gap: 30px;
-    text-transform: uppercase;
   }
   .projects__project {
     width: 180px;
