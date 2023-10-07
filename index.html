@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"
+    />
 
     <title>Showcase | Dawn Trail</title>
   </head>
   <body>
     <article class="showcase">
       <nav class="showcase__nav">
-        <a href="https://portfolio2-dltrail.vercel.app">< Portfolio</a>
+        <a href="https://portfolio2-dltrail.vercel.app"
+          ><span class="glyphicon glyphicon-arrow-left"></span> Back
+          Portfolio</a
+        >
       </nav>
       <section>
         <header class="showcase__header">Showcase</header>
@@ -19,50 +27,169 @@
       <section>
         <div id="filters">
           <span class="filter active" data-filter="all">ALL</span>
-          <span class="filter" data-filter="lp">HTML/CSS</span>
+          <span class="filter" data-filter="lp">HTML|CSS</span>
           <span class="filter" data-filter="js">Javascript/JQuery</span>
-          <span class="filter" data-filter="jq">Tailwind</span>
+          <span class="filter" data-filter="tw">Tailwind</span>
           <!-- <span class="filter" data-filter="sc">Simple Components</span> -->
         </div>
       </section>
       <section class="projects">
-        <div class="projects__project" data-filter="lp">
-          <p class="title">Gateway</p>
-          <a href="./projects/gateway/index.html"> </a>
+        <div
+          class="projects__project"
+          data-filter="js"
+          style="
+            background-image: url(./projects/gateway/assets/27-05-21-GW-MW-Desktop.jpg);
+          "
+        >
+          <div class="overlay">
+            <p class="title">Gateway</p>
+            <a href="./projects/gateway/index.html">View</a>
+          </div>
         </div>
-        <div class="projects__project" data-filter="lp">
-          <p class="title">Transitional Layers</p>
-          <a href="./projects/transitional/index.html"> </a>
+        <div
+          class="projects__project"
+          data-filter="js"
+          style="
+            background-image: url(./projects/transitional/assets/HERO_WW_2560-min.jpg);
+          "
+        >
+          <div class="overlay">
+            <h2 class="title">Transitional Layers</h2>
+            <p>
+              Seasonal shift campaign landing page with subtle scroll
+              animations. Built using HTML, CSS, Jquery and ScrollMagic
+            </p>
+            <a href="./projects/transitional/index.html">View</a>
+          </div>
         </div>
-        <div class="projects__project" data-filter="lp">
-          <p class="title">leather Layers</p>
-          <a href="./projects/leather/index.html"></a>
+        <div
+          class="projects__project"
+          data-filter="lp"
+          style="
+            background-image: url(./projects/leather/assets/Leather-Treatment-03.jpg);
+          "
+        >
+          <div class="overlay">
+            <p class="title">leather Layers</p>
+            <a href="./projects/leather/index.html">View</a>
+          </div>
         </div>
-        <div class="projects__project" data-filter="lp">
-          <p class="title">animal</p>
-          <a href="./projects/animal/index.html" data-filter="lp"> </a>
+        <div
+          class="projects__project"
+          data-filter="tw"
+          style="background-image: url(./projects/modo/img/modo-cover.png)"
+        >
+          <div class="overlay">
+            <p class="title">Modo</p>
+            <p>Sample landing page</p>
+
+            <a href="./projects/modo/index.html" data-filter="js">View</a>
+          </div>
         </div>
-        <div class="projects__project" data-filter="lp">
-          <p class="title">Denim Guide</p>
-          <a href="./projects/denim-guide/index.html"> </a>
+        <div
+          class="projects__project"
+          data-filter="js"
+          style="
+            background-image: url(./projects/film-finder/public/film-finder-cover.png);
+          "
+        >
+          <div class="overlay">
+            <p class="title">Filmfinder</p>
+            <p>
+              Simple movie finder application that allows lets uers browse
+              through a random set of moveies for a specific genre they choose.
+              Built with vanilla JavaScript, HTML and simple CSS
+            </p>
+
+            <a href="./projects/film-finder/index.html" data-filter="js"
+              >View</a
+            >
+          </div>
         </div>
+        <!-- <div
+      class="projects__project"
+      data-filter="js"
+      style="
+        background-image: url(./projects/gateway/assets/27-05-21-GW-MW-Desktop.jpg);
+      "
+    >         
+      <div
+        class="overlay"
+      >
+      <p class="title">animal</p>
+      <a href="./projects/animal/index.html" data-filter="js"> </a>
+        </p>
+      </div>
+    </div>
+
+    <div
+    class="projects__project"
+    data-filter="js"
+    style="
+      background-image: url(./projects/gateway/assets/27-05-21-GW-MW-Desktop.jpg);
+    "
+  >         
+    <div
+      class="overlay"
+    >
+    <p class="title">Denim Guide</p>
+    <a href="./projects/denim-guide/index.html"> </a>
+      </p>
+    </div>
+  </div>
+  <div
+  class="projects__project"
+  data-filter="js"
+  style="
+    background-image: url(./projects/gateway/assets/27-05-21-GW-MW-Desktop.jpg);
+  "
+>         
+  <div
+    class="overlay"
+  >
+  <p class="title">Five Styles</p>
+  <a href="./projects/five-styles/index.html"> </a>
+    </p>
+  </div>
+</div>
+<div
+class="projects__project"
+data-filter="js"
+style="
+  background-image: url(./projects/gateway/assets/27-05-21-GW-MW-Desktop.jpg);
+"
+>         
+<div
+  class="overlay"
+>
+<p class="title">In the press</p>
+<a href="./projects/in-the-press/index.html" data-filter="js"> </a>
+<p>Masonry is a JavaScript</p>
+  </p>
+</div>
+</div>
+<div
+class="projects__project"
+data-filter="js"
+style="
+  background-image: url(./projects/gateway/assets/27-05-21-GW-MW-Desktop.jpg);
+"
+>         
+<div
+  class="overlay"
+>
+<p class="title">Watches</p>
+<a href="./projects/watches/index.html"></a>
+  </p>
+</div>
+</div> -->
+
         <!-- <div class="projects__project" data-filter="js">
           <p class="title">FilmFinder</p>
           <a href="./projects/film-finder/index.html"></a>
           <p class="desc">JS project that interacts with a movie API</p>
         </div> -->
-        <div class="projects__project" data-filter="lp">
-          <p class="title">Five Styles</p>
-          <a href="./projects/five-styles/index.html"> </a>
-        </div>
-        <div class="projects__project" data-filter="jq">
-          <p class="title">In the press</p>
-          <a href="./projects/in-the-press/index.html" data-filter="lp"> </a>
-        </div>
-        <div class="projects__project">
-          <p class="title">Watches</p>
-          <a href="./projects/watches/index.html"></a>
-        </div>
+
         <!-- <div class="projects__project" data-filter="js">
           <p class="title">Magic Eight</p>
           <p class="desc">
@@ -74,5 +201,13 @@
     </article>
 
     <script src="./index.js"></script>
+    <script>
+      const buttons = document.querySelectorAll(".projects__project");
+      buttons.forEach((button) =>
+        $(button).hover(function () {
+          $(this).toggleClass("active");
+        })
+      );
+    </script>
   </body>
 </html>

@@ -72,6 +72,7 @@ article#leather-feature .image-block img {
 }
 article#leather-feature .as_cta {
   font-size: 10px;
+  color: #000;
 }
 @media screen and (min-width: 375px) {
   article#leather-feature .as_cta {

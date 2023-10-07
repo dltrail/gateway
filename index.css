@@ -52,13 +52,24 @@ body {
   justify-content: center;
   padding: 40px 0;
   align-items: center;
-  margin: 0 2em;
+  margin: 0 8px;
 }
 
 .projects__project {
-  width: 150px;
-  height: 150px;
-  margin: 10px 20px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: center top;
+  position: relative;
+  margin: 8px;
+}
+
+.projects__project.active {
   border: 1px solid lightgray;
   display: flex;
   flex-direction: column;
@@ -66,23 +77,48 @@ body {
   align-items: center;
   border-radius: 10px;
   position: relative;
+  background-size: cover;
+  position: relative;
 }
 
 .projects__project.hide {
   display: none;
 }
-.projects__project:nth-child(even) {
-  background-color: #b71676;
-}
-.projects__project:nth-child(odd) {
-  background-color: #2ca487;
+
+.projects__project .overlay {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  transition: all 0.4s ease-in-out !important;
 }
 
-.projects__project > a {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  left: 0;
+.projects__project .overlay a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.projects__project .overlay a:hover {
+  color: #1a2bc8;
+}
+
+.projects__project .overlay p {
+  text-align: center;
+  margin: 0 20px 10px;
+}
+.projects__project.active .overlay {
+  opacity: 1;
 }
 
 .projects__project .title {
@@ -104,6 +140,9 @@ body {
   .projects {
     grid-template-columns: auto auto;
   }
+  .projects__project {
+    width: 50vw;
+  }
 }
 
 /* Desktop */
@@ -112,7 +151,7 @@ body {
     grid-template-columns: auto auto auto;
   }
   .projects__project {
-    width: 180px;
-    height: 180px;
+    width: 400px;
+    height: 400px;
   }
 }
