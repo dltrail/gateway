@@ -29,74 +29,90 @@ body {
   letter-spacing: 2px;
 }
 
-.showcase__filters {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  gap: 2em;
-  margin: 40px 0;
-  padding: 0;
-}
-.showcase__filters li {
-  list-style: none;
+#filters {
   text-transform: uppercase;
-}
-.showcase__blockContainer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  padding: 20px 0;
+  gap: 25px;
+}
+
+.filter {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #673b8a;
+}
+.filter.active {
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.projects {
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: center;
+  padding: 40px 0;
   align-items: center;
-  gap: 30px;
-  text-transform: uppercase;
   margin: 0 2em;
 }
 
-.showcase__blockContainer__block {
-  width: 250px;
-  height: 250px;
+.projects__project {
+  width: 150px;
+  height: 150px;
+  margin: 10px 20px;
   border: 1px solid lightgray;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   position: relative;
 }
-.showcase__blockContainer__block:nth-child(even) {
+
+.projects__project.hide {
+  display: none;
+}
+.projects__project:nth-child(even) {
   background-color: #b71676;
 }
-.showcase__blockContainer__block:nth-child(odd) {
-  background-color: aqua;
+.projects__project:nth-child(odd) {
+  background-color: #2ca487;
 }
 
-.showcase__blockContainer__block > a {
+.projects__project > a {
   position: absolute;
   height: 100%;
   width: 100%;
   left: 0;
 }
 
-.showcase__blockContainer__block > p {
+.projects__project .title {
   letter-spacing: 1px;
   font-weight: bold;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.projects__project .desc {
+  font-weight: normal;
+  text-transform: unset;
+  text-align: center;
 }
 
 /* Tablets */
 @media screen and (min-width: 768px) {
+  .projects {
+    grid-template-columns: auto auto;
+  }
 }
 
 /* Desktop */
 @media screen and (min-width: 1024px) {
-  .showcase__blockContainer {
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px 0;
-    text-align: center;
-    gap: 30px;
-    text-transform: uppercase;
+  .projects {
+    grid-template-columns: auto auto auto;
   }
-  .showcase__blockContainer__block {
-    width: 280px;
-    height: 280px;
+  .projects__project {
+    width: 180px;
+    height: 180px;
   }
 }
