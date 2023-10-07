@@ -100,6 +100,9 @@ body {
   background-color: rgba(0, 0, 0, 0.6) !important;
   transition: all 0.4s ease-in-out !important;
 }
+.projects__project .overlay.deep {
+  background-color: rgba(0, 0, 0) !important;
+}
 
 .projects__project .overlay a {
   color: white;
